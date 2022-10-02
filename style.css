@@ -24,15 +24,13 @@ body{
 		padding: 5px;
 		border-spacing: 15px;
         border-collapse:collapse;
-        
-        /* text-decoration-style: ; */
         }
         .topnav {
             position: static;
             top: 0%;
             width: 100%;
             background-color: #333;
-            overflow: hidden;
+            /* overflow: hidden; */
           }
           
           .topnav a {
@@ -43,9 +41,10 @@ body{
                 width: 10%;
                 text-align: center;
             color: #f2f2f2;
-            padding: 14px 16px; 
+            padding: 15px 15px; 
             text-decoration: none;
-            font-size: 17px;
+            font-size: 17px; 
+            overflow: hidden;
           }
           
           .topnav a:hover {
@@ -54,13 +53,24 @@ body{
             color: black;
           }
           
-          .topnav a:active {
-            background-color: #04AA6D;
-            /* color: white; */
-          }
-          
           .topnav .icon {
             display: none;
             cursor: pointer;
           }
+          @media screen and (max-width: 800px) {
+            /* .left, .main, .right {
+              width: 100%; } */
 
+          
+              .topnav a {
+                display: block;
+                zoom: 1; 
+                width: 30%;
+                text-align: center;
+            color: #f2f2f2;
+            padding: 14px ; 
+            text-decoration: none;
+            font-size: 17px; 
+            overflow: hidden;
+          }            
+          }

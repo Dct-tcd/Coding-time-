@@ -9,6 +9,9 @@ function myFunctionall()
 function myFunctioncf()
 {
     // console.log("1");
+    // var target = document.getElementById("cf");
+    // target.innerHTML += "<style>color:green</style>";
+    // {<style>color:blue</style>}
     api_url="https://www.kontests.net/api/v1/codeforces";
     getapi(api_url,1);
 }  function myFunctionlc()
