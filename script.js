@@ -5,7 +5,26 @@ function myFunctionall()
 {
     api_url="https://www.kontests.net/api/v1/all";
     getapi(api_url,0);
-}  
+}
+// function newtime1(time)
+// {
+//     // let longMonth = time.toLocaleString('en-us', { month: 'long' }); /* June */
+//     // return longMonth;
+//     // console.log(longMonth);
+//     let r="",p="",ans=0;
+//     let  months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+//    time.forEach(Element => {
+    // if (Element=='-') ans++;
+    // if (ans==0) r+=Element;
+//    });
+// for(let i=0;i<time.length;i++)
+// {
+//     if (ans==1) p+=time[i];
+//     if (time[i]=='-') ans++;
+//     if (ans==0) r+=time[i];
+// }
+//    return  r + " " +months[p];
+// }       
 function myFunctioncf()
 {
     // console.log("1");
@@ -47,36 +66,36 @@ getapi(api_url);
 function hideloader() {
     document.getElementById('loading').style.display = 'none';
 }
-
+const po = document.getElementById("employees").innerHTML;
 function show(data,apo) {
-    let tab = 
+ let tab = 
         `<tr>
           <th>Name</th>
           <th>Link to the Contest</th>
-          <th>In_24_hours</th>
-          <th>Start_time</th>
-          <th>End_time</th>
+          <th>In_24_Hours</th>
+          <th>Start time</th>
+          <th>End time</th>
           <th>Duration in Min</th>
           <th>Site</th>
           <th>Status</th>
           </tr>`;
          data.sort((a, b) => b.start_time > a.start_time ? -1: 1);
       for (let r of data) {
-        // let currentTimeDate = new Date();
-if (r.site!="HackerRank")
+if (r.site!="HackerRank"&&r.site!="HackerEarth")
         { 
-            r.duration = parseInt(r.duration)/60;
+        r.duration = parseInt(r.duration)/60;
         let str=r.url;
         let str1=r.status;
         if (str1=="CODING")str1="Running";
         else str1="Not Yet Running";
-    var dt = new Date(r.start_time);
-    var dt1 = new Date(r.end_time);
+        let dt = new Date(r.start_time);
+    let dt1 = new Date(r.end_time);
     r.start_time = dt.toLocaleString();
     r.end_time = dt1.toLocaleString();
-     r.url=str.link(r.url);
-  
-         tab += `<tr> 
+     r.url=str.link(r.url);   
+       
+     tab += 
+    `<tr> 
     <td>${r.name} </td>
     <td>${r.url}</td>
     <td>${r.in_24_hours} </td>
@@ -85,8 +104,8 @@ if (r.site!="HackerRank")
     <td>${r.duration} </td>
     <td>${r.site}</td>
     <td>${str1}</td>
-      </tr>`;
+    </tr>`;
         }
     }
-    document.getElementById("employees").innerHTML = tab;
+    document.getElementById("employees").innerHTML = tab ;
 }
