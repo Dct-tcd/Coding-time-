@@ -9,57 +9,39 @@
 		<title>Document</title>
 	</head>
 	<body>
-		<a href="https://cp-scheduler.herokuapp.com/"><h1 id="Dev" >Coming Contests</h1></a>
-		<div class="d-flex justify-content-center">
+		<div  class="nope" id="nav1bar" > 
+		<a href="https://cp-scheduler.herokuapp.com/" target="_blank"><h1 id="Dev">Coming Contests</h1></a>
+        <a href="https://www.kontests.net/" target="_blank"><h1 id="iop">Credits to Kontests.org</h1></a>
+       <a href="https://www.kontests.net/" target="_blank"> <img src="https://www.kontests.net/assets/logo-58ee3d2845314d4d1db299ed11663e14fbd52ea33e7aadcaea6151349ea20fc0.svg" id="img"height="50" ></a>	
+	</div>	
+	<hr>
+	   <!-- Latest compiled and minified CSS -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
+
+<div class="d-flex justify-content-center">
 			<div class="spinner-border"
 				role="status" id="loading">
 				<span class="sr-only">Loading...</span>
 			</div>
 		</div>
 		
-		
+
          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 			<div class="topnav" id="myTopnav">
-			  <a onclick="myFunctionall()" class="all">All</a>
-			  <a onclick="myFunctioncf()" class="cf">Codeforces</a>
-			  <a onclick="myFunctionlc()"class="lc">Leetcode</a>
-			  <a onclick="myFunctionatr()"class="atr">Atcoder</a>
-			  <a onclick="myFunctioncc()"class="cc">Codechef</a>
+			  <a onclick="myFunctionall()" class="kick">All</a>
+			  <a onclick="myFunctioncf()" class="kick">Codeforces</a>
+			  <a onclick="myFunctionlc()"class="kick">Leetcode</a>
+			  <a onclick="myFunctionatr()"class="kick">Atcoder</a>
+			  <a onclick="myFunctioncc()"class="kick">Codechef</a>
 			  <a onclick="myFunctionkick()"class="kick">Kickstart</a>
+			  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
 			  </a>
 			</div>
 			<!-- <div class="new"> -->
 			<table id="employees" class="new" border="1" width="99%">
-<!-- <captions>Hi</captions> -->
-				<tr>
-				<th>Name</th>
-				<th>Link  Contest</th>
-				<th>In_24_hours</th>
-				<th>Start_time</th>
-				<th>End_time</th>
-				<th>Duration in Min</th>
-				<th>Status</th>
-				<th>reminder</th>
-			</tr>
-		</table>
-		<!-- <form class="naya">  
-			<label> Select Site </label>  
-			<select>  
-			<option value = "Codeforces"> Codeforces   
-			</option>  
-			<option value = "Codechef"> Codechef   
-			</option>  
-			<option value = "Atcoder"> Atcoder  
-			</option>  
-			<option value = "Leetcode"> Leetcode  
-			</option>  
-			<option value = "Kickstart"> Kickstart  
-			</option>  
-				
-		</select>  
-		</form>   -->
-	<!-- </div>	 -->
+         		</table>
 			
 	</body>
 </html>

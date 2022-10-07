@@ -62,7 +62,14 @@ async function getapi(url,apo)
     show(data,apo);
 }
 getapi(api_url);
-
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
 function hideloader() {
     document.getElementById('loading').style.display = 'none';
 }
