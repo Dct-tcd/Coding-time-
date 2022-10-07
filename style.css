@@ -4,6 +4,13 @@ body
     text-align: center;
     margin: 60px ;
     padding: 20px;
+  }
+* {
+  font-family: 'Nunito' !important;
+}
+td:nth-child(1) {
+  font-weight: 500;
+  font-size: 1rem;
 }
 .nope{
   position: fixed; 
