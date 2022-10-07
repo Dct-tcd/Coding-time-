@@ -80,8 +80,10 @@ body
     table-layout: auto;  
   }
         .topnav {
+          
+            width: max-content;
             position: static;
-            /* height: fit-content; */
+            width: fit-content;
             height:49px;
             top: 10%;
             width: 100%;
@@ -90,9 +92,8 @@ body
             /* overflow: hidden; */
           }
           
-          .topnav a {
-                /* height: fit-content; */
-                /* max-height: fit-content; */
+          .topnav a {    
+            align-items: center;
                 display: inline-block;
                 display: -moz-inline-box;
                 *display: inline; 
@@ -122,6 +123,7 @@ body
             .topnav a.icon {
               float: right;
               display: block;
+              /* width: max-content; */
             }
             #img{
               visibility: hidden;
@@ -130,26 +132,42 @@ body
               visibility: hidden;
             }
             .topnav{
-              /* mask-position: 0%; */
+              mask-position: 0%;
               width: 100%;
-              /* scroll-behavior: smooth; */
+              /* min-width: fit-content; */
+              /* width: auto; */
+              /* height: none; */
+              /* color: max-content; */
+              /* column-width:2rem; */
+              display:inline-block;
+              width: fit-content;
+              /* left:0% */
+              float:left;
+              scroll-behavior: smooth;
             }
             .topnav a{
-              width:max-content;
+              
+            background-color: #04AA6D;
+            /* position: absolute; */
+              min-width:fit-content;
+              max-width:fit-content;
               float: none;
               justify-content: center;
               text-align: center;
               align-content: center;
-              float: none;
+              /* float: left; */
             }
-            .topnav.responsive {position: relative;}
+            .topnav.responsive {position: relative;
+            }
             .topnav.responsive a.icon {
+              width: fit-content;
               position: absolute;
               right: 0;
               top: 0;
             }
             .topnav.responsive a {
-              float: none;
+              width: fit-content;
+              /* float: left; */
               display: block;
               text-align: left;
             }

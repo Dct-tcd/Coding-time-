@@ -99,12 +99,14 @@ if (r.site!="HackerRank"&&r.site!="HackerEarth")
     let dt1 = new Date(r.end_time);
     r.start_time = dt.toLocaleString();
     r.end_time = dt1.toLocaleString();
-     r.url=str.link(r.url);   
-       
+     r.url=str.link(r.url);
+//      var newElement = document.createElement("p");
+// newElement.innerHTML = "CONTENTS";
+// document.getElementById("ID").appendChild(newElement);   
      tab += 
     `<tr> 
     <td>${r.name} </td>
-    <td>${r.url}</td>
+    <td>${r.name}</td>
     <td>${r.in_24_hours} </td>
     <td>${r.start_time} </td>
     <td>${r.end_time}</td>
