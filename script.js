@@ -106,7 +106,7 @@ if (r.site!="HackerRank"&&r.site!="HackerEarth")
      tab += 
     `<tr> 
     <td>${r.name} </td>
-    <td>${r.name}</td>
+    <td>${r.url}</td>
     <td>${r.in_24_hours} </td>
     <td>${r.start_time} </td>
     <td>${r.end_time}</td>
