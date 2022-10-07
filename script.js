@@ -70,6 +70,7 @@ function myFunction() {
       x.className = "topnav";
     }
   }
+
 function hideloader() {
     document.getElementById('loading').style.display = 'none';
 }
@@ -87,7 +88,8 @@ function show(data,apo) {
           <th>Status</th>
           </tr>`;
          data.sort((a, b) => b.start_time > a.start_time ? -1: 1);
-      for (let r of data) {
+        //  let pp=0;
+      for (let r of data) { 
 if (r.site!="HackerRank"&&r.site!="HackerEarth")
         { 
         r.duration = parseInt(r.duration)/60;
@@ -99,18 +101,25 @@ if (r.site!="HackerRank"&&r.site!="HackerEarth")
     let dt1 = new Date(r.end_time);
     r.start_time = dt.toLocaleString();
     r.end_time = dt1.toLocaleString();
+    
      r.url=str.link(r.url);
-//      var newElement = document.createElement("p");
-// newElement.innerHTML = "CONTENTS";
-// document.getElementById("ID").appendChild(newElement);   
-     tab += 
+    
+     //  r.url={r.name};
+    // let a = document.createElement('a');
+    // var linkText = document.createTextNode(r.name);
+    // a.appendChild(r.name);
+    // a.title = "my title text";
+    // a.href = r.url;
+    // document.body.appendChild(a);
+    // let pp=<tr><td><a href="r.url">r.name</a></td></tr>;
+      tab += 
     `<tr> 
     <td>${r.name} </td>
     <td>${r.url}</td>
-    <td>${r.in_24_hours} </td>
-    <td>${r.start_time} </td>
+    <td>${r.in_24_hours}</td>
+    <td>${r.start_time}</td>
     <td>${r.end_time}</td>
-    <td>${r.duration} </td>
+    <td>${r.duration}</td>
     <td>${r.site}</td>
     <td>${str1}</td>
     </tr>`;
