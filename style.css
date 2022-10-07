@@ -70,6 +70,7 @@ body
       /* font-weight: bold; */
       }
     table, th, td{
+      border-style: hidden;
       border-bottom: 1px solid #ddd;
       font-family: verdana,arial,sans-serif;
     margin: 5px;
@@ -80,6 +81,8 @@ body
   }
         .topnav {
             position: static;
+            /* height: fit-content; */
+            height:49px;
             top: 10%;
             width: 100%;
             background-color: #04AA6D;
@@ -88,6 +91,8 @@ body
           }
           
           .topnav a {
+                /* height: fit-content; */
+                /* max-height: fit-content; */
                 display: inline-block;
                 display: -moz-inline-box;
                 *display: inline; 
@@ -126,7 +131,7 @@ body
             }
             .topnav{
               /* mask-position: 0%; */
-              width: fit-content;
+              width: 100%;
               /* scroll-behavior: smooth; */
             }
             .topnav a{
