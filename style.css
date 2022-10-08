@@ -15,28 +15,15 @@ td:nth-child(1) {
 .nope{
   position: fixed; 
  background-color: #282A35;;
- /* size: 0px 0px 0px 0px; */
  top:0px;
  bottom:84%;
  left: 0px;
  right: 0px;
- /* top:0px;
- top:0px; */
- 
  }
 #nav1bar {
-  /* border-style: ridge; */
-  /* overflow: hidden; */
-  /* background-color: #666666; */
-  /* position: fixed; */
-  /* top: 0; */
-  width: 100%;
+width: 100%;
 }
 #Dev{
-  /* background-color: aliceblue; */
-  /* border-style: groove; */
-  /* padding: 10px 10px 10px 10px; */
-  /* width: fit-content; */
               
   position:fixed;
   top: 4%;
@@ -97,12 +84,10 @@ td:nth-child(1) {
             width: max-content;
             position: static;
             width: fit-content;
-            height:49px;
+            height: 53px;
             top: 10%;
             width: 100%;
             background-color: #04AA6D;
-            /* background-color: #ddd; */
-            /* overflow: hidden; */
           }
           
           .topnav a {    
