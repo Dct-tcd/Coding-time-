@@ -22,6 +22,19 @@ td:nth-child(1) {
  }
 #nav1bar {
 width: 100%;
+margin-bottom: 20px;
+}
+
+#myTopnav{
+  width:85vw;
+  margin-top:50px;
+  margin-left:2vw;
+}
+
+#employees{
+   width:85vw;
+   margin-bottom: 100px;
+   margin-left:2vw;
 }
 #Dev{
               
@@ -80,7 +93,7 @@ width: 100%;
     table-layout: auto;  
   }
         .topnav {
-          width: fit-content;           
+            width: 85vw;           
             width: max-content;
             position: static;
             width: fit-content;
