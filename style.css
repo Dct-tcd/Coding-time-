@@ -4,7 +4,7 @@ body
     text-align: center;
     margin: 6%;
     padding: 2%;
-  }
+}
 * {
   font-family: 'Nunito' !important;
 }
@@ -13,7 +13,6 @@ td:nth-child(1) {
   font-size: 1rem;
 }
 .nope{
-           /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> */
   overflow: auto;
   position: relative; 
  background-color: #282A35;;
@@ -22,7 +21,7 @@ td:nth-child(1) {
  left: 0px;
  right: 0px;
  }
-#nav1bar {
+/* #nav1bar {
 width: 100%;
 margin-bottom: 20px;
 }
@@ -30,28 +29,21 @@ margin-bottom: 20px;
   width:85vw;
   margin-top:50px;
   margin-left:2vw;
-}
-#employees{
+} */
+/* #employees{
    width:85vw;
    margin-bottom: 100px;
    margin-left:2vw;
-}
+} */
 #Dev{
   position: sticky;
-  /* position:fixed; */
-  /* top: 4%; 
-  left:5%; */
   margin-left: 2%;
-  /* margin-top: 0%; */
   float: left;
   color:#f1f1f1;
   font-family: BlinkMac System Font,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 #iop{
   position: sticky;
-   /* position:fixed; */
-  /* top: 1%;
-  left: 65%; */
   margin-right: 13%;
   float: right; 
   color:#f1f1f1;;
@@ -92,11 +84,11 @@ margin-bottom: 20px;
       border-collapse:collapse;
       table-layout: auto;  
   }
-  .after-nope {
+  /* .after-nope {
     clear: left;
-  }
+  } */
         .topnav {
-          width: fit-content;           
+            width: fit-content;           
             width: max-content;
             display: block;
             position: relative;
@@ -134,7 +126,7 @@ margin-bottom: 20px;
             cursor: pointer;
           }
           
-          @media screen and (max-width: 1200px) {
+          @media screen and (max-width: 1300px) {
             .topnav a:not(:first-child) {display: none;}
             .topnav a.icon {
               float: right;
