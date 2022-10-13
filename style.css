@@ -2,8 +2,8 @@ body
 {
     font-size:14px;
     text-align: center;
-    margin: 60px ;
-    padding: 20px;
+    margin: 6%;
+    padding: 2%;
   }
 * {
   font-family: 'Nunito' !important;
@@ -13,7 +13,9 @@ td:nth-child(1) {
   font-size: 1rem;
 }
 .nope{
-  position: fixed; 
+           /* <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> */
+  overflow: auto;
+  position: relative; 
  background-color: #282A35;;
  top:0px;
  bottom:84%;
@@ -24,39 +26,40 @@ td:nth-child(1) {
 width: 100%;
 }
 #Dev{
-              
-  position:fixed;
-  top: 4%;
-  left:5%;
-  margin-left: 0%;
-  margin-top: 0%;
+  position: sticky;
+  /* position:fixed; */
+  /* top: 4%; 
+  left:5%; */
+  margin-left: 2%;
+  /* margin-top: 0%; */
+  float: left;
   color:#f1f1f1;
   font-family: BlinkMac System Font,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
 }
 #iop{
-  position:fixed;
-  top: 1%;
-  left: 65%;
-  float: right;
+  position: sticky;
+   /* position:fixed; */
+  /* top: 1%;
+  left: 65%; */
+  margin-right: 13%;
+  float: right; 
   color:#f1f1f1;;
   font-family: BlinkMac System Font,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
-/* border-style: ridge; */
-/* padding: 10px 10px 10px 10px; */
 }
 #img{
   position: sticky;
-  top: 3%;
+  float: right;
+  top: 20%;
   left: 89%; 
 }
 .topnav .icon {
   display: none;
 }
-    table{
+    table
+    {
       float: left;
-      /* border-style:inset; */
-    /* border: 5px solid #88aa6b; */
-    margin: 50px;
-    padding: 5px;        
+      margin: 50px;
+      padding: 5px;        
     }
     tr:nth-child(even) {
       background-color: #D6EEEE;
@@ -70,21 +73,26 @@ width: 100%;
       }
     table, th, td{
       border-style: hidden;
-      /* border-style:dotted; */
       border-bottom: 1px solid #ddd;
       font-family: verdana,arial,sans-serif;
-    margin: 5px;
-		padding: 5px;
-		border-spacing: 15px;
-    border-collapse:collapse;
-    table-layout: auto;  
+      margin: 4px;
+   		padding: 5px;
+  		border-spacing: 15px;
+      border-collapse:collapse;
+      table-layout: auto;  
+  }
+  .after-nope {
+    clear: left;
   }
         .topnav {
-          width: fit-content;           
+          
+            width: fit-content;           
             width: max-content;
-            position: static;
+            display: block;
+            position: relative;
             width: fit-content;
-            height: 53px;
+            /* margin-top: auto; */
+            height: 52px;
             top: 10%;
             width: 100%;
             background-color: #04AA6D;
@@ -121,7 +129,6 @@ width: 100%;
             .topnav a.icon {
               float: right;
               display: block;
-              /* width: max-content; */
             }
             #img{
               visibility: hidden;
@@ -132,29 +139,21 @@ width: 100%;
             .topnav{
               mask-position: 0%;
               width: 100%;
-              /* min-width: fit-content; */
-              /* width: auto; */
-              /* height: none; */
-              /* color: max-content; */
-              /* column-width:2rem; */
               display:inline-block;
               width: fit-content;
-              /* left:0% */
               float:left;
               scroll-behavior: smooth;
             }
-            .topnav a{
+             .topnav a{
               
             background-color: #04AA6D;
-            /* position: absolute; */
-              min-width:fit-content;
+              /* min-width:fit-content;
               max-width:fit-content;
               float: none;
               justify-content: center;
               text-align: center;
-              align-content: center;
-              /* float: left; */
-            }
+              align-content: center; */
+            } 
             .topnav.responsive {position: relative;
             }
             .topnav.responsive a.icon {
@@ -168,7 +167,6 @@ width: 100%;
             }
             .topnav.responsive a {
               width: fit-content;
-              /* float: left; */
               display: block;
               text-align: left;
             }
