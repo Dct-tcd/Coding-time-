@@ -10,23 +10,28 @@ function myFunctioncf()
 {
     api_url="https://www.kontests.net/api/v1/codeforces";
     getapi(api_url,1);
+    myFunction();   
 }  function myFunctionlc()
 {
     api_url="https://www.kontests.net/api/v1/leet_code";
     getapi(api_url,2);
+    myFunction();
 }  function myFunctionatr()
 {
     api_url="https://www.kontests.net/api/v1/at_coder";
     getapi(api_url,3);
+    myFunction();
 }  function myFunctioncc()
 {
     api_url="https://www.kontests.net/api/v1/code_chef";
     getapi(api_url,4);
+    myFunction();
 }  
 function myFunctionkick()
 {
     api_url="https://www.kontests.net/api/v1/kick_start";
     getapi(api_url,5);
+    myFunction();
 }  
 async function getapi(url,apo)
  {
