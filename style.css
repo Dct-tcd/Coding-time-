@@ -197,22 +197,21 @@ border-style:outset;
             cursor: pointer;
           }
           @media screen and (max-width: 1200px) {
-            /* .topnav a:not(:first-child) {display: none;} */
-            /* .topnav a.icon {
-              float: right;
-              display: block;
-            } */
-          /* .topnav .icon {
-            right: 0%;
-            cursor: pointer;
-          } */
-            #img{
+             #img{
               visibility: hidden;
             }
             #iop{
               visibility: hidden;
             }
+            .nope{
+             margin-bottom:10px;
+              align-items: center;
+              display: inline-block;
+             
+
+            }
             .topnav{
+              margin-top:15%;
               
       overflow-x:scroll;
       overflow-y:scroll;
@@ -221,56 +220,5 @@ border-style:outset;
       display: -moz-inline-box;
       *display: inline; 
     
-              /* mask-position: 0%;
-              /* width: 100%; */
-              /* left: 0%;  */
-              /* display:inline-block; */
-              /* width: fit-content; */
-              /* float : left; */
-              /* scroll-behavior: smooth; */ */
-              /* overflow: auto; */
-              /* position: relative;  */
-             /* background-color: #282A35;; */
-             /* top:0px;
-             bottom:84%;
-             left: 0px;
-             right: 0px; */
-             /* display: block;     */
             }
-             .topnav a{
-             background-color: #04AA6D;
-             
-             /* display: inline-block; */
             }
-           .topnav .icon{
-              /* max-height: max-content; */
-              float: right;
-              /* margin-right: 0%; */
-            } 
-            .topnav.responsive {position: relative;
-            }
-            .topnav.responsive a.icon {
-              /* top:0px;
-              bottom:84%;
-              left: 0px;
-              right: 0px; */
-               
-              /* width: max-content; */
-              position: absolute;
-              /* left:0; */
-              right: 0;
-              top: 0;
-            }
-            .topnav{
-              top : 5%;
-            }
-            .topnav.responsive a {
-              /* top:0px;
-              bottom:84%;
-              left: 0px;
-              right: 0px; */
-              width: fit-content;
-              display: block;
-              text-align: left;
-            }
-          }
