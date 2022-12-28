@@ -2,24 +2,29 @@ body
 {
     font-size:14px;
     text-align: center;
-    margin: 6%;
-    padding: 2%;
+    background-color:#f8f9fa;
+    /* background-color:#E7E9EB; */
 }
 * {
   font-family: 'Nunito' !important;
 }
+
 td:nth-child(1) {
   font-weight: 500;
   font-size: 1rem;
 }
 .nope{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* color: white; */
+  text-align: center;
+    /* background: #1abc9c; */
+    /* color: white; */
+    /* font-size: 30px; */
   overflow: auto;
-  position: relative; 
- background-color: #282A35;;
- top:0px;
- bottom:84%;
- left: 0px;
- right: 0px;
+ background-color: #282A35;
  }
 #Dev{
   position: sticky;
@@ -41,61 +46,148 @@ td:nth-child(1) {
   top: 20%;
   left: 89%; 
 }
-.topnav .icon {
-  display: none;
+.foot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: grey;
+  color: white;
+  text-align: center;
 }
-    table
+/* .nope {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+} */
+ table
+    {
+      border-style:ridge;
+      border-color:#fff!important;
+      vertical-align: middle;
+      scrollbar-width: auto;
+      margin: 5px;
+      padding: 5px;
+      max-width:48%;
+      max-height:400px;
+      table-layout: scroll-behavior;   
+                display: inline-block;
+                display: -moz-inline-box;
+      
+      table-layout: scroll-behavior;   
+      overflow-x:scroll;
+      overflow-y:scroll;
+      
+    }
+    
+    .new
     {
       float: left;
-      margin: 50px;
-      padding: 5px;        
+     }
+    .new1
+    {
+      float: right;
+     }
+     .opop{
+      padding:10px 80px 10px 80px ;
+      Color:#007bff;
+      border-style:inset;
+     left:-15%;
+     display:inline-block;
+     position:relative;
+     font-size:30px;
+     
+     border-radius:20px;
+     }
+     .opop1{
+      
+      border-radius:20px;
+border-style:outset;
+      Color:#007bff;
+      padding:10px 80px 10px 80px ;
+     display:inline-block;
+      position:relative;
+      right:-15%;
+      font-size:30px;
+  }
+   figcaption {
+    display:flex;
+    position:vertical-align;
+      font-weight: bold;
+      font-size: 24px;
+      color: #333;
     }
     tr:nth-child(even) {
       background-color: #D6EEEE;
     }
+    
+    tr:nth-child(odd) {
+    background-color:#E7E9EB;
+
+    }
     tr:nth-child(1) {
       background-color:khaki;
     }
-
+    .tabover{
+      align-items: center;
+      
+      table-layout: scroll-behavior;   
+      display: inline-block;
+      display: -moz-inline-box;
+      overflow-x:scroll;
+      overflow-y:scroll;
+      width:10px;
+      height:10px;
+    }
     tr:hover {
       background-color:whitesmoke;
       }
     table, th, td{
-      border-style: hidden;
+      /* overflow-x:scroll;
+      overflow-y:scroll;
+     */
+      /* height:100px;
+      width:60px; */
+      /* width:10%; */
+      /* border-style: hidden; */
+      /* overflow: scroll-behavior; */
+          
       border-bottom: 1px solid #ddd;
       font-family: verdana,arial,sans-serif;
-      margin: 4px;
+      margin: 4px;            
    		padding: 5px;
   		border-spacing: 15px;
+      align-items: center;
       border-collapse:collapse;
-      table-layout: auto;  
+      table-layout: scroll-behavior;   
   }
         .topnav {
-            width: fit-content;           
-            width: max-content;
-            display: block;
-            position: relative;
-            width: fit-content;
-
-            height: 53px;
-            top: 10%;
-            width: 100%;
+          position:.responsive;
+            display: inline-block;
+            padding: 10px 10px 6px 10px;
+            height: fit-content;
+            width: 50%; 
+            white-space: nowrap;
             background-color: #04AA6D;
           }
           
-          .topnav a {    
-            align-items: center;
+          .topnav a {
+            color:#007bff;
+            white-space: nowrap;    
+                align-items: center;
                 display: inline-block;
                 display: -moz-inline-box;
                 *display: inline; 
-                zoom: 1; 
-                width: 10%;
+                /* zoom: 1;  */
+                /* width: 10%; */
                 text-align: center;
-            color: #f2f2f2;
-            padding: 15px 15px; 
-            text-decoration: none;
-            font-size: 17px; 
-            overflow: hidden;
+                color: #f2f2f2;
+                padding: 15px 15px; 
+                text-decoration: none;
+                font-size: 17px; 
+                overflow: hidden;
           }
           
           .topnav a:hover {
@@ -108,16 +200,16 @@ td:nth-child(1) {
             display: none;
             cursor: pointer;
           }
-          @media screen and (max-width: 1100px) {
-            .topnav a:not(:first-child) {display: none;}
-            .topnav a.icon {
+          @media screen and (max-width: 1200px) {
+            /* .topnav a:not(:first-child) {display: none;} */
+            /* .topnav a.icon {
               float: right;
               display: block;
-            }
-          .topnav .icon {
+            } */
+          /* .topnav .icon {
             right: 0%;
             cursor: pointer;
-          }
+          } */
             #img{
               visibility: hidden;
             }
@@ -125,13 +217,21 @@ td:nth-child(1) {
               visibility: hidden;
             }
             .topnav{
-              mask-position: 0%;
+              
+      overflow-x:scroll;
+      overflow-y:scroll;
+      align-items: center;
+      display: inline-block;
+      display: -moz-inline-box;
+      *display: inline; 
+    
+              /* mask-position: 0%;
               /* width: 100%; */
               /* left: 0%;  */
-              display:inline-block;
-              width: fit-content;
-              float : left;
-              scroll-behavior: smooth;
+              /* display:inline-block; */
+              /* width: fit-content; */
+              /* float : left; */
+              /* scroll-behavior: smooth; */ */
               /* overflow: auto; */
               /* position: relative;  */
              /* background-color: #282A35;; */
