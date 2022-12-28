@@ -93,22 +93,24 @@ function hideloader() {
 function show(data,apo) {
  let tab = 
         `<tr>
-          <th>Name</th>
+        <th>Site</th>  
+        <th>Name</th>
           <th>In_24_Hours</th>
           <th>Start time</th>
           <th>link to the contest</th>
           <th>End time</th>
           <th>Duration in Min</th>
-          <th>Site</th>
+          
            </tr>`;
           let tabo = 
         `<tr>
+        <th>Site</th>
           <th>Name</th>
           <th>Start time</th>
           <th>link to the contest</th>
           <th>End time</th>
           <th>Duration in Min</th>
-          <th>Site</th>
+          
           </tr>`;
  
          data.sort((a, b) => b.start_time > a.start_time ? -1: 1);
@@ -160,13 +162,13 @@ let rem_link = linker4 + tre + linker1 + tem + linker2 + r.site + linker3 + r.ur
 
      tab += 
     `<tr> 
+    <td>${siteo}</td>
     <td>${r.name} </td>
     <td>${r.in_24_hours}</td>
     <td>${r.start_time}</td>
     <td>${r.url}</td>
     <td>${r.end_time}</td>
     <td>${r.duration}</td>
-    <td>${siteo}</td>
     </tr>`;
         }
 
@@ -216,12 +218,12 @@ let rem_link = linker4 + tre + linker1 + tem + linker2 + r.site + linker3 + r.ur
 
      tabo += 
     `<tr> 
+    <td>${siteo}</td>
     <td>${r.name} </td>
     <td>${r.start_time}</td>
     <td>${r.url}</td>
     <td>${r.end_time}</td>
     <td>${r.duration}</td>
-    <td>${siteo}</td>
     </tr>`;
         }       
     }
