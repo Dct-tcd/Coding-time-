@@ -1,9 +1,10 @@
 body
 {
+background-image: url("https://wallpapercave.com/wp/wp2742495.jpg");
     font-size:14px;
     text-align: center;
-    background-color:#f8f9fa;
-    /* background-color:#E7E9EB; */
+    /* background-color:#f8f9fa;
+    background-color:#ccccff; */
 }
 * {
   font-family: 'Nunito' !important;
@@ -51,7 +52,7 @@ td:nth-child(1) {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: grey;
+  background-color:#4CAF50;
   color: white;
   text-align: center;
 }
@@ -125,7 +126,7 @@ border-style:outset;
       color: #333;
     }
     tr:nth-child(even) {
-      background-color: #D6EEEE;
+      background-color: #B2EBF2;
     }
     
     tr:nth-child(odd) {
@@ -166,7 +167,7 @@ border-style:outset;
             height: fit-content;
             width: 50%; 
             white-space: nowrap;
-            background-color: #04AA6D;
+            background-color: #26C6DA;
           }
           
           .topnav a {
