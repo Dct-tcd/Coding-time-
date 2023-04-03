@@ -96,6 +96,9 @@ td:nth-child(1) {
       margin-top: 4%;
       padding: 5%;
       width:min-content;
+      /* overflow-x:auto;
+      overflow-y:auto;        */
+   
      
       /* scrollbar-width: auto; */
       /* max-height:400px; */
@@ -180,6 +183,9 @@ td:nth-child(1) {
   		border-spacing: 15px;
       align-items: center;
       border-collapse:collapse;
+      /* overflow-x:auto;
+      overflow-y:auto;        */
+   
       /* table-layout: scroll-behavior;    */
   }
         .topnav {
@@ -230,12 +236,31 @@ td:nth-child(1) {
           }
           @media screen and (max-width: 1200px) {
              #img{
-              visibility: hidden;
-            }
+         
+              display: none;
+               }
             #iop{
-              visibility: hidden;
+              display: none;
+              /* visibility: hidden; */
             }
             .topnav{
-              visibility: hidden;
+              /* display: none; */
+              display:block;
+            
+            }
+            table{
+             width: screen;
+              overflow-x:visible;
+             /* overflow-y:auto;
+             /* margin-right: 5%; */
+            }
+            table th td {
+              display: block;
+              /* width: max-content; */
+              /* padding:1%; */
+              /* border-collapse: collapse; */
+            }
+            .nope{
+              width:screen
             }
           }
