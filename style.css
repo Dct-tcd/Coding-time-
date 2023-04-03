@@ -232,7 +232,7 @@ td:nth-child(1) {
           
           .topnav .icon {
             display: none;
-            cursor: pointer;
+            /* cursor: pointer; */
           }
           @media screen and (max-width: 1200px) {
              #img{

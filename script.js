@@ -122,8 +122,10 @@ function show(data,apo) {
  
          data.sort((a, b) => b.start_time > a.start_time ? -1: 1);
         //  let pp=0;
-      for (let r of data) { 
-if (r.site!="HackerRank"&&r.site!="HackerEarth"&&r.status!="CODING")
+        let arrayer = ["CodeForces","CodeChef","LeetCode","AtCoder","Kick Start"];
+      for (let r of data) {
+        console.log(r.site); 
+if (arrayer.includes(r.site)==true)
         { 
         r.duration = parseInt(r.duration)/60;
         let str=r.url;
