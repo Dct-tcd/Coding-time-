@@ -254,6 +254,6 @@ let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&
     </tr>`;
 }       
     }
-    if (window.screen.width>=700)  document.getElementById("employees").innerHTML = tab;
+    if (window.screen.width>=950)  document.getElementById("employees").innerHTML = tab;
     else  document.getElementById("employees").innerHTML = tabo ;
 }
