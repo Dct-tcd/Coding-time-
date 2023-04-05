@@ -233,7 +233,7 @@ for(let i=0;i<r.name.length;i++)
  else desc_str+=r.name[i];
 }
 // desc_url
-siteo=="Codechef"||siteo=="Leetcode"?desc_str+='+'+"- "+siteo:"";
+siteo=="Codechef"||siteo=="Leetcode"?desc_str+='+'+'-' + '+' + siteo:"";
 let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&text=${desc_str}&location=${str_url}`;
      tab += 
     `<tr> 
