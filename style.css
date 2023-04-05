@@ -254,8 +254,8 @@ td:nth-child(1) {
           @media screen and (max-width: 950px) {
 
 body{
-  
-  width: 380px;
+  zoom: 95%;
+  width: 385px;
 }
 .topnav{
   width: 365px;
