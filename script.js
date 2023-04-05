@@ -147,7 +147,6 @@ function show(data,apo) {
           let tabo = 
         `<tr>
           <th>Reminder</th>
-          <th>Site</th>
           <th>Name</th>
           <th>Start time</th>
           <th>Duration in Min</th>
@@ -249,7 +248,6 @@ let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&
      tabo += 
     `<tr> 
     <td> <a href= ${op} target="_blank" style="text-decoration:none;">&nbsp;&nbsp;Add📅 Reminder </a></td>
-    <td>${siteo} </td>
     <td>${r.name} </td>
     <td>${r.start_time}</td>
     <td>${r.duration}</td>
