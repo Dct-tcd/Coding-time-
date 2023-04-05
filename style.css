@@ -194,7 +194,7 @@ td:nth-child(1) {
             padding: 10px 10px 6px 10px;
             height: fit-content;
             /* width: fit-content; */
-            margin:4%; 
+            margin-top:4%; 
             white-space: nowrap;
             background-color: #26C6DA;
             overflow-x:auto;
