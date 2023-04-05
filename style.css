@@ -236,7 +236,6 @@ td:nth-child(1) {
           }
           @media screen and (max-width: 1200px) {
              #img{
-         
               display: none;
                }
             #iop{
@@ -244,9 +243,7 @@ td:nth-child(1) {
               /* visibility: hidden; */
             }
             .topnav{
-              /* display: none; */
               display:block;
-            
             }
             table{
              width: screen;
