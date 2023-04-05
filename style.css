@@ -247,15 +247,19 @@ td:nth-child(1) {
             }
             table{
              width: screen;
-              overflow-x:visible;
+             overflow-x: scroll;
+             margin-right: 1%;
+             margin-left: 1%;
              /* overflow-y:auto;
              /* margin-right: 5%; */
             }
             table th td {
               display: block;
-              /* width: max-content; */
-              /* padding:1%; */
-              /* border-collapse: collapse; */
+              width: max-content;
+              padding:2px;
+              	border-spacing: 5px;
+                overflow-x: scroll;
+              border-collapse: collapse;
             }
             .nope{
               width:screen
