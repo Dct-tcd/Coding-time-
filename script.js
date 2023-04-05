@@ -1,4 +1,3 @@
-
 let api_url = 
       "https://www.kontests.net/api/v1/all";
       let all=0,cf=0,cc=0,ctr=0,lc,kick=0;
@@ -16,7 +15,7 @@ function myFunctionall()
 // });
 
 }
-
+document.getElementById('1').click
 function myFunctioncf()
 {
     api_url="https://www.kontests.net/api/v1/codeforces";
@@ -66,12 +65,8 @@ getapi(api_url);
 // {
     
 // }
-
-
-
 function rem_fun(date)
 {
-    console.log(1);
     let ans;
     for(let i=0;i<date.length;i++)
     {
@@ -91,10 +86,6 @@ function myFunction() {
 function hideloader() {
     document.getElementById('loading').style.display = 'none';
 }
-
-// let ans = document.getElementById("rem");
-
-// ans.url = "https://calendar.google.com/event?action=TEMPLATE&dates=2022-12-27T14:35:00.000Z/2022-12-27T16:35:00.000Z&text=Codeforces Round (Div. 2)&location=https://codeforces.com/contestRegistration/1731"
 // const po = document.getElementById("employees").innerHTML;
 
 // const popi = document.getElementById("emp").innerHTML;
@@ -114,18 +105,20 @@ function show(data,apo) {
            </tr>`;
           let tabo = 
         `<tr>
-        <th>Reminder</th> 
-          <th>Site</th>
+        <th>Reminder</th>
+        <th>Site</th>
           <th>Name</th>
           <th>Start time</th>
+          <th>link to the contest</th>
+          <th>End time</th>
+          <th>Duration in Min</th>
+          
           </tr>`;
  
          data.sort((a, b) => b.start_time > a.start_time ? -1: 1);
         //  let pp=0;
-        let arrayer = ["CodeForces","CodeChef","LeetCode","AtCoder","Kick Start"];
-      for (let r of data) {
-        console.log(r.site); 
-if (arrayer.includes(r.site)==true)
+      for (let r of data) { 
+if (r.site!="HackerRank"&&r.site!="HackerEarth")
         { 
         r.duration = parseInt(r.duration)/60;
         let str=r.url;
@@ -145,10 +138,10 @@ if (arrayer.includes(r.site)==true)
      if (apo==5) siteo="KickStart";
      if (apo==0) siteo=r.site;
 
-let linker1="/";
-let linker2="&text=";
-let linker3="&location=";
-let linker4="https://calendar.google.com/event?action=TEMPLATE&dates={";
+// let linker1="/";
+// let linker2="&text=";
+// let linker3="&location=";
+// let linker4="https://calendar.google.com/event?action=TEMPLATE&dates={";
 
 // rem_link = "https://calendar.google.com/event?action=TEMPLATE&dates=" + contest['start_time'] + "/" + contest['end_time'] + "&text=" + contest["name"] + "&location=" + contest['url'];
     // rem_link = formatCalendarUrl(rem_link);
@@ -161,47 +154,39 @@ let linker4="https://calendar.google.com/event?action=TEMPLATE&dates={";
      let dt1 = new Date(r.end_time);
      tre = dt.toISOString();
      tem = dt1.toISOString();
+     r.start_time = dt.toLocaleString();
+     r.end_time = dt1.toLocaleString();
+    //  let dt1 = new Date(r.end_time);
+    //  tre = dt.toISOString();
+    //  tem = dt1.toISOString();
      let ans="";
      for(let i=0;i<tre.length;i++)
      {
-       
+
         if (tre[i]=='.'||tre[i]=='-'||tre[i]==':') ans=ans;
         else ans+=tre[i];
-    
+
      }
 tre=ans;
 let cp="";
 for(let i=0;i<tem.length;i++)
 {
-  
+
    if (tem[i]=='.'||tem[i]=='-'||tem[i]==':') ans=ans;
    else cp+=tem[i];
 
 }
-tem=cp;
-
-
-     r.start_time = dt.toLocaleString();
-     r.end_time = dt1.toLocaleString();
+tem=cp;    
      
      
-     
-let rem_link = linker4 + tre + linker1 + tem + linker2 + r.site + linker3 + r.url ;
- rem_link = str.link(rem_link);
+// let rem_link = linker4 + tre + linker1 + tem + linker2 + r.site + linker3 + r.url ;
+//  rem_link = str.link(rem_link);
+console.log(siteo);
+let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&text=${siteo}&location=${r.site}`;
 
-let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&text=${r.name}&location=${r.name}`;
-// let sta = document.getElementById("rem");
-// sta.innerHTML=op; 
-// let result = sta.link(op);
-
-// let Reminder_link = "";
-
-// Reminder_link = op.link(Reminder_link);
- console.log(r.name);
-
-tab += 
+     tab += 
     `<tr> 
-    <td> <a href= ${ op } target="_blank">📅 Reminder </a></td>
+    <td> <a href= ${op} target="_blank">📅 Reminder </a></td>
     <td>${siteo}</td>
     <td>${r.name} </td>
     <td>${r.in_24_hours}</td>
@@ -210,21 +195,19 @@ tab +=
     <td>${r.end_time}</td>
     <td>${r.duration}</td>
     </tr>`;
-    tabo += 
-    `<tr> 
-    <td> <a href= ${ op } target="_blank">📅 Reminder </a></td>
-    <td>${siteo}</td>
-    <td>${r.name} </td>
-    <td>${r.start_time}</td>
-    </tr>`;
+ tabo += 
+`<tr> 
+<td> <a href= ${op} target="_blank">📅 Reminder </a></td>
+<td>${siteo}</td>
+<td>${r.name} </td>
+<td>${r.start_time}</td>
+<td>${r.url}</td>
+<td>${r.end_time}</td>
+<td>${r.duration}</td>
+</tr>`;
         }       
     }
-    if (window.screen.width>=700)
-    {
-        document.getElementById("employees").innerHTML = tab ;
-    
-    }
-    else 
-    document.getElementById("employees").innerHTML = tabo ;
+    document.getElementById("employees").innerHTML = tab ;
+    // document.getElementById("emp").innerHTML = tabo ;
 
 }
