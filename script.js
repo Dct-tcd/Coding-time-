@@ -147,7 +147,7 @@ function show(data,apo) {
           let tabo = 
         `<tr>
           <th>Reminder</th>
-          <th>Name</th>
+          <th>Contest Name</th>
           <th>Start time</th>
           <th>Duration in Min</th>
           </tr>`;

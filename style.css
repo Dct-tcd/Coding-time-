@@ -118,6 +118,7 @@ td:nth-child(1) {
     
       /* float: left; */
      }
+ 
     /* .new1
     {
       float: right;
@@ -223,7 +224,12 @@ td:nth-child(1) {
                 overflow-y:auto;       
               
               }
-          
+              th {
+                position: sticky;
+                background-color: khaki;
+                z-index: 2;
+                top: 0;
+              }
           .topnav a:hover {
             background-color: #ddd;
             cursor: pointer;
@@ -234,6 +240,15 @@ td:nth-child(1) {
             display: none;
             /* cursor: pointer; */
           }
+          .tabover{
+            /* float: left; */
+            display: flex;
+			justify-content: center;
+			
+            /* position: sticky; */
+/* position: respon; */
+          }
+      
           @media screen and (max-width: 1200px) {
              #img{
               display: none;
@@ -246,22 +261,45 @@ td:nth-child(1) {
               display:block;
             }
             table{
+              float: left;
+              /* display: ; */
              width: screen;
              overflow-x: scroll;
              margin-right: 1%;
              margin-left: 1%;
-             /* overflow-y:auto;
-             /* margin-right: 5%; */
+            /* overflow-anchor:auto;
+            overscroll-behavior:inherit; */
             }
             table th td {
               display: block;
-              width: max-content;
+              width: min-content;
               padding:2px;
               	border-spacing: 5px;
                 overflow-x: scroll;
               border-collapse: collapse;
             }
+            th {
+              position: sticky;
+              background-color: khaki;
+              z-index: 2;
+              /* y-index:0; */
+              top: 0;
+            }
             .nope{
               width:screen
             }
+            .table {
+              float: left;
+              position: sticky;
+              top: 0;
+              width: 100%;
+          }
+          .tabover{
+            float: left;
+            /* display: flex;
+			justify-content: center; */
+			
+            /* position: sticky; */
+/* position: respon; */
+          }
           }
