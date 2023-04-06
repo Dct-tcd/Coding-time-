@@ -226,6 +226,34 @@ td:nth-child(1) {
                 /* overflow-y:auto;        */
               
               }
+              .spinner-border {
+                font-family: 'Ubuntu', sans-serif;
+    font-family: 'Anuphan', sans-serif;
+    font-family: 'Poppins', sans-serif;
+                color:antiquewhite;
+                display: inline-block;
+                width: 2rem;
+                height: 2rem;
+                vertical-align: -.125em;
+                border: .25em solid currentColor;
+                border-right-color: transparent;
+                border-radius: 50%;
+                -webkit-animation: .75s linear infinite spinner-border;
+                animation: .75s linear infinite spinner-border;
+              }
+              .only{
+                font-family: 'Ubuntu', sans-serif;
+                font-family: 'Anuphan', sans-serif;
+                font-family: 'Poppins', sans-serif;
+                /* margin: 20%; */
+                font-size: large;
+              }
+              @keyframes spinner-border{
+                100% {
+                  transform: rotate(360deg);
+              }
+              }
+              
               th {
                 position: sticky;
                 background-color: khaki;

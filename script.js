@@ -237,7 +237,7 @@ siteo=="Codechef"||siteo=="Leetcode"?desc_str+='+'+'-' + '+' + siteo:"";
 let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&text=${desc_str}&location=${str_url}`;
      tab += 
     `<tr> 
-    <td> <a href= ${op} target="_blank">📅 Reminder </a></td>
+    <td> <a href= ${op} target="_blank">🗓️ Reminder </a></td>
     <td>${siteo}</td>
     <td>${ r.name} </td>
     <td>${r.in_24_hours}</td>
@@ -249,7 +249,7 @@ let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&
         
      tabo += 
     `<tr> 
-    <td> <a href= ${op} target="_blank" style="text-decoration:none;">&nbsp;&nbsp;Add📅 Reminder </a></td>
+    <td> <a href= ${op} target="_blank" style="text-decoration:none;">&nbsp;&nbsp;Add🗓️ Reminder </a></td>
     <td>${ r.name}  ${siteo=="Codechef"||siteo=="Leetcode"?"- "+siteo:""} </td>
     <td>${r.start_time}</td>
     <td>${r.duration}</td>
