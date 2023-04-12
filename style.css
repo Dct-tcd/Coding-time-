@@ -9,6 +9,7 @@ background-image: url("https://wallpapercave.com/wp/wp2742495.jpg");
     background-color:#ccccff; */
 }
 * {
+  font-family: "noto_sansregular"!important;
   font-family: 'Nunito' !important;
 }
 ::-webkit-scrollbar {
