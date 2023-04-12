@@ -3,7 +3,10 @@ body
 background-image: url("https://wallpapercave.com/wp/wp2742495.jpg");
     font-size:14px;
     text-align: center;
-    
+    /* display: flex;
+    justify-content: center;
+    justify-items: center;
+    flex-direction: column; */
             /* max-width: 384px; */
     /* background-color:#f8f9fa;
     background-color:#ccccff; */
@@ -283,7 +286,7 @@ td:nth-child(1) {
           @media screen and (max-width: 950px) {
 
 body{
-  zoom: 0.9;
+  zoom: 0.78;
   width: 385px;
 }
 .topnav{
@@ -308,8 +311,17 @@ body{
              overflow-x: scroll;
              margin-right: 1%;
              margin-left: 1%;
+             border-collapse: collapse;
             /* overflow-anchor:auto;
             overscroll-behavior:inherit; */
+            }
+            
+            th {
+              position: sticky;
+              border-collapse: collapse;
+              background-color: khaki;
+              z-index: 2;
+              top: 0;
             }
             table th td {
               display: block;
@@ -319,13 +331,11 @@ body{
                 overflow-x: scroll;
               border-collapse: collapse;
             }
-            th {
-              position: sticky;
-              background-color: khaki;
-              z-index: 2;
-              /* y-index:0; */
-              top: 0;
-            }
+            
+/* td:nth-child(1) {
+  font-weight: 500;
+  font-size: 1rem;
+} */
             .nope{
               width:screen
             }
