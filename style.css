@@ -286,7 +286,7 @@ td:nth-child(1) {
           @media screen and (max-width: 950px) {
 
 body{
-  zoom: 0.78;
+  zoom: 0.9;
   width: 385px;
 }
 .topnav{
