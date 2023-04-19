@@ -182,6 +182,7 @@ td:nth-child(1) {
     
     tr:hover {
       background-color:whitesmoke;
+      text-shadow: 10lvh;
       }
     table, th, td{
       /* border-bottom: 1px solid #ddd; */

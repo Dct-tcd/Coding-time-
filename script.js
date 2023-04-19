@@ -240,7 +240,7 @@ console.log(cop);
     `<tr> 
     <td> <a href= ${op} target="_blank" style="text-decoration:none;">Add 🗓️ Reminder </a></td>
     <td>${siteo}</td>
-    <td><a href=${cop} target="_blank" style=text-decoration : none;"> ${r.name}</a> </td>
+    <td><a href=${cop} target="_blank" style="text-decoration : none;"> ${r.name}</a> </td>
     <td>${r.in_24_hours}</td>
     <td>${r.start_time}</td>
     <td>${r.end_time}</td>
@@ -250,7 +250,7 @@ console.log(cop);
      tabo += 
     `<tr> 
     <td> <a href= ${op} target="_blank" style="text-decoration:none;" >&nbsp;&nbsp;Add🗓️ Reminder </a></td>
-    <td><a href=${cop} target="_blank" style=text-decoration : none;"> ${ r.name}  ${siteo=="Codechef"||siteo=="Leetcode"?"- "+siteo:""}</a></td>
+    <td><a href=${cop} target="_blank" style="text-decoration : none;"> ${ r.name}  ${siteo=="Codechef"||siteo=="Leetcode"?"- "+siteo:""}</a></td>
     <td>${r.start_time}</td>
     <td>${r.duration}</td>
     </tr>`;
