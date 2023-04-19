@@ -146,9 +146,10 @@ function show(data,apo) {
           let tabo = 
         `<tr>
           <th>Reminder</th>
-         <th>Site</th>
           <th>Contest Name</th>
           <th>Start time</th>
+          <th>Duration in Min</th>
+         
           </tr>`;
 //  console.log(apo);
          data.sort((a, b) => b.start_time > a.start_time ? -1: 1);
@@ -255,14 +256,13 @@ console.log(cop);
      tabo += 
     `<tr> 
     <td> <a href= ${op} target="_blank" style="text-decoration:none;" >&nbsp;&nbsp;Add🗓️ Reminder </a></td>
-    
-    <td> <img src="${siteo}.png" style="width:30px;height:30px;display:flex"></img> </td>
-
     <td><a href=${cop} target="_blank" style="text-decoration : none; 
     -webkit-text-decoration: underline dotted darkblue;
     text-decoration: underline dotted darkblue;
     text-underline-offset: 3px;"> ${ r.name}  ${siteo=="Codechef"||siteo=="Leetcode"?"- "+siteo:""}</a></td>
-    <td>${r.start_time}</td>    </tr>`;
+    <td>${r.start_time}</td>    
+    <td>${r.duration}</td>
+    </tr>`;
 }       
     }
     if (window.screen.width>=950)  document.getElementById("employees").innerHTML = tab;
