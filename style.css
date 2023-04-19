@@ -93,6 +93,16 @@ td:nth-child(1) {
 } */
  table
     {
+      background-color: #505050;
+      border-radius: 5px;
+      box-shadow: 0 5px 25px #242424;
+      /* color: #fff; */
+      font-family: Itim;
+      margin-top: 10px;
+      overflow: hidden;
+      text-align: center;
+      width: 100%;
+  
       /* border-style:ridge; */
       display: flex;
       justify-content: center;
@@ -181,10 +191,19 @@ td:nth-child(1) {
     }
     
     tr:hover {
-      background-color:whitesmoke;
-      text-shadow: 10lvh;
+      /* background-color:grey; */
+      /* background-color: #505050; */
+      border-radius: 5px;
+      box-shadow: 0 5px 25px 25px lightblue;
+      /* color: #fff; */
+      font-family: Itim;
+      margin-top: 10px;
+      /* overflow: hidden; */
+      text-align: center;
+      /* width: 100%; */
       }
     table, th, td{
+      
       /* border-bottom: 1px solid #ddd; */
       font-family: verdana,arial,sans-serif;
       /* margin: 4px;             */
