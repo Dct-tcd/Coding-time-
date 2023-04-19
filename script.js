@@ -140,7 +140,6 @@ function show(data,apo) {
           <th>Name</th>
           <th>In_24_Hours</th>
           <th>Start time</th>
-          <th>link to the contest</th>
           <th>End time</th>
           <th>Duration in Min</th>    
            </tr>`;
@@ -168,7 +167,7 @@ if (r.site==null||r.site=="CodeForces"||r.site=="CodeChef"||r.site=="AtCoder"||r
 
 
         let str_url=r.url;    
-     r.url=str.link(r.url);
+    //  r.url=str.link(r.url);
     
      let siteo=r.site;
    if (siteo=="CodeForces") siteo="Codeforces";
@@ -235,14 +234,15 @@ for(let i=0;i<r.name.length;i++)
 // desc_url
 siteo=="Codechef"||siteo=="Leetcode"?desc_str+='+'+'-' + '+' + siteo:"";
 let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&text=${desc_str}&location=${str_url}`;
+let cop = r.url;
+console.log(cop);
      tab += 
     `<tr> 
     <td> <a href= ${op} target="_blank" style="text-decoration:none;">Add 🗓️ Reminder </a></td>
     <td>${siteo}</td>
-    <td>${ r.name} </td>
+    <td><a href=${cop} target="_blank" style=text-decoration : none;"> ${r.name}</a> </td>
     <td>${r.in_24_hours}</td>
     <td>${r.start_time}</td>
-    <td>${r.url}</td>
     <td>${r.end_time}</td>
     <td>${r.duration}</td>
     </tr>`;
@@ -250,7 +250,7 @@ let op = `https://calendar.google.com/event?action=TEMPLATE&dates=${tre}/${tem}&
      tabo += 
     `<tr> 
     <td> <a href= ${op} target="_blank" style="text-decoration:none;" >&nbsp;&nbsp;Add🗓️ Reminder </a></td>
-    <td>${ r.name}  ${siteo=="Codechef"||siteo=="Leetcode"?"- "+siteo:""} </td>
+    <td><a href=${cop} target="_blank" style=text-decoration : none;"> ${ r.name}  ${siteo=="Codechef"||siteo=="Leetcode"?"- "+siteo:""}</a></td>
     <td>${r.start_time}</td>
     <td>${r.duration}</td>
     </tr>`;
